@@ -1,0 +1,22 @@
+<meta>
+	<info name="VUF" type="gamemode" async="true" description="testdesc" author="NickTaSpy | Nick Vidalis" version="1.0" />
+	
+	<file src="Clientside/TeamsPage/TeamSelection.html" />    
+    <file src="Clientside/TeamsPage/TeamSelector.css" />
+	<file src="Clientside/TeamsPage/army.jpg" />
+	<file src="Clientside/TeamsPage/assassins.jpg" />
+	<file src="Clientside/TeamsPage/bodyguards.jpg" />
+	<file src="Clientside/TeamsPage/mercs.jpg" />
+	<file src="Clientside/TeamsPage/swat.jpg" />
+	<file src="Clientside/TeamsPage/pricedown bl.ttf" />
+	
+	<script src="GameManager.cs" type="server" lang="csharp" />
+	<script src="ConnectionManager.cs" type="server" lang="csharp" />
+	<script src="Commands.cs" type="server" lang="csharp" />
+	<script src="Weapon.cs" type="server" lang="csharp" />
+	<script src="Team.cs" type="server" lang="csharp" />
+	<script src="Vehicles.cs" type="server" lang="csharp" />
+
+	<script src="Clientside/TeamsPage/Client.js" type="client" lang="javascript" />
+
+</meta>
