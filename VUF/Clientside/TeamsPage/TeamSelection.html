@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<script>
+function switchTo(team){
+	resourceCall("onSwitch", team);
+};
+</script>
+
+<head>
+    <link rel="stylesheet" style type="text/css" href="TeamSelector.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<div class="teams" id="mercenaries">
+		<div id="mercs">
+			<img src="mercs.jpg" onclick="switchTo('Mercs')">
+			<p>Mercs</p>
+		</div>
+		<div id="assassins" onclick="switchTo('Assassins')">
+			<img src="assassins.jpg">
+			<p>Assassins</p>
+		</div>
+		<p>Mercenaries</p>
+	</div>
+
+	<div class="teams" id="gov">
+		<div id="swat" onclick="switchTo('SWAT')">
+			<img src="swat.jpg">
+			<p>SWAT</p>
+		</div>
+		<div id="bodyguards" onclick="switchTo('Bodyguards')">
+			<img src="bodyguards.jpg">
+			<p>Bodyguards</p>
+		</div>
+		<div id="army" onclick="switchTo('Army')">
+			<img src="army.jpg">
+			<p>Army</p>
+		</div>
+		<p>Government</p>
+	</div>
+
+</body>
+</html>

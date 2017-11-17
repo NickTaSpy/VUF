@@ -1,0 +1,53 @@
+@font-face { font-family: GTAV; src: url('pricedown bl.ttf'); } 
+
+body{
+	background-color: transparent;
+	width: 1700px;
+	margin: 0 auto;
+}
+
+body img{
+	position: relative;
+	max-height: 380px;
+	overflow: hidden;
+	max-width: 350px;
+	border: 1px solid black;
+}
+
+.teams{
+	float: left;
+	border: 2px solid;
+	border-color: #003300;
+	padding: 15px;
+	margin: 3px;
+	background-color: #d2d2d2;
+}
+
+.teams div{
+    display: inline-block;
+	border: 1px solid black;
+}
+
+.teams div p{
+	text-align: center;
+	font-family: GTAV;
+	font-size: 2em;
+}
+
+.teams p{
+	text-align: center;
+	font-family: GTAV;
+	font-size: 3em;
+}
+
+#mercenaries:hover{
+	background-color: #890000;
+}
+
+#gov:hover{
+	background-color: #020099;
+}
+
+.teams div:hover{
+	background-color: green;
+}
