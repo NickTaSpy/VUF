@@ -1,17 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Timers;
 
 using GrandTheftMultiplayer.Server.API;
-using GrandTheftMultiplayer.Server.Constant;
+
 using GrandTheftMultiplayer.Server.Elements;
-using GrandTheftMultiplayer.Server.Managers;
-using GrandTheftMultiplayer.Server.ArrayExtensions;
-using GrandTheftMultiplayer.Shared;
-using GrandTheftMultiplayer.Server;
 
 using GrandTheftMultiplayer.Shared.Math;
 
@@ -43,7 +36,7 @@ public class GameManager : Script
         API.onClientEventTrigger += OnClientEvent;
         API.onPlayerRespawn += OnPlayerRespawnHandler;
 
-        gameStartTimer = new Timer(12000); // 12 secs
+        gameStartTimer = new Timer(30000); // 30 secs
         gameStartTimer.Elapsed += OnGameStart;
 
         gameDurationTimer = new Timer(300000); // 5 mins

@@ -1,17 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using System.Timers;
 
 using GrandTheftMultiplayer.Server.API;
-using GrandTheftMultiplayer.Server.Constant;
 using GrandTheftMultiplayer.Server.Elements;
-using GrandTheftMultiplayer.Server.Managers;
-using GrandTheftMultiplayer.Server.ArrayExtensions;
 using GrandTheftMultiplayer.Shared;
-using GrandTheftMultiplayer.Server;
 
 using GrandTheftMultiplayer.Shared.Math;
 
@@ -45,7 +39,6 @@ public class Vehicles : Script
         API.createVehicle((VehicleHash)666166960, new Vector3(245.6635, -373.1134, 44.25681), new Vector3(0.7657914, 1.470812, -108.1165), 1, 1, 0); // baller6 1
         API.createVehicle((VehicleHash)666166960, new Vector3(253.1416, -375.7762, 44.38214), new Vector3(1.312611, 1.448513, -106.9972), 1, 1, 0); // baller6 2
         API.createVehicle((VehicleHash)(-1961627517), new Vector3(261.6479, -378.9248, 44.32645), new Vector3(1.011269, 0.8153141, -110.696), 1, 1, 0); // stretch 1
-
 
         // ---- Assassins Vehicles ---- //
         API.createVehicle((VehicleHash)(-909201658), new Vector3(-355.0742, -117.6049, 38.20299), new Vector3(0.1976756, -12.84848, 101.6586), 1, 1, 0); // fcr 1
@@ -127,7 +120,7 @@ public class Vehicles : Script
         }).Start();
     }
 
-    private void OnPlayerExitVehicleHandler(Client player, NetHandle vehicle)
+    private void OnPlayerExitVehicleHandler(Client player, NetHandle vehicle, int fromSeat)
     {
         if(API.getVehicleOccupants(vehicle).Count() == 0 && GetDistance(API.getEntityPosition(vehicle),  API.getEntityData(vehicle, "SPAWN_POS")) > 5)
         {

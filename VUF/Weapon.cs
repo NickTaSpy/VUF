@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using GrandTheftMultiplayer.Server.API;
 using GrandTheftMultiplayer.Server.Constant;
 using GrandTheftMultiplayer.Server.Elements;
-using GrandTheftMultiplayer.Server.Managers;
-using GrandTheftMultiplayer.Server.ArrayExtensions;
-using GrandTheftMultiplayer.Shared;
-using GrandTheftMultiplayer.Server;
 
-using GrandTheftMultiplayer.Shared.Math;
+using GrandTheftMultiplayer.Shared;
 
 public class Weapon : Script
 {
