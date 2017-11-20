@@ -120,7 +120,7 @@ public class Vehicles : Script
         }).Start();
     }
 
-    private void OnPlayerExitVehicleHandler(Client player, NetHandle vehicle, int fromSeat)
+    private void OnPlayerExitVehicleHandler(Client player, NetHandle vehicle)
     {
         if(API.getVehicleOccupants(vehicle).Count() == 0 && GetDistance(API.getEntityPosition(vehicle),  API.getEntityData(vehicle, "SPAWN_POS")) > 5)
         {
